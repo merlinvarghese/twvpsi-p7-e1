@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class RectangleCalculatorTest {
 
     @Test
-    void expect20ForLength5AndWidth4() {
+    void expectArea20ForLength5AndWidth4() {
         RectangleCalculator calculator = new RectangleCalculator(5, 4);
         Assertions.assertEquals(20, calculator.calculateArea());
     }
@@ -17,8 +17,14 @@ class RectangleCalculatorTest {
     }
 
     @Test
-    void expect12ForPerimeter4And5() {
+    void expect18ForPerimeter5And4() {
         RectangleCalculator calculator = new RectangleCalculator(5, 4);
-        Assertions.assertEquals(40, calculator.perimeter());
+        Assertions.assertEquals(18, calculator.perimeter());
+    }
+
+    @Test
+    void expect24ForPerimeter8And4() {
+        RectangleCalculator calculator = new RectangleCalculator(8, 4);
+        Assertions.assertEquals(24, calculator.perimeter());
     }
 }
