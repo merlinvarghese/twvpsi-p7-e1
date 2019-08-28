@@ -1,19 +1,22 @@
 package com.tw.vapasi;
 
 /**
- * Understand a figure with four straight sides and four right angles, with unequal adjacent sides.
+ * Understand a figure with four straight sides and four right angles.
  */
-public class RectangleCalculator {
+public class Rectangle {
     private int length;
     private int width;
 
-    public RectangleCalculator(int length, int width)
-    {
+    public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
-    public int calculateArea() {
+    public Rectangle(int side) {
+        this(side, side);
+    }
+
+    public int area() {
         return length * width;
     }
 
