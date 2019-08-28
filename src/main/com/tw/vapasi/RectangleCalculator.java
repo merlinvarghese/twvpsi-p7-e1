@@ -18,6 +18,6 @@ public class RectangleCalculator {
     }
 
     public int perimeter() {
-        return 2 * (length * width);
+        return 2 * (length + width);
     }
 }
