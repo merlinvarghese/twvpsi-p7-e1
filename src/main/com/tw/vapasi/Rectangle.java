@@ -7,14 +7,23 @@ public class Rectangle {
     private int length;
     private int width;
 
-    public Rectangle(int length, int width) {
+    private Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
     }
 
-    public Rectangle(int side) {
+    private Rectangle(int side) {
         this(side, side);
     }
+
+    public static Rectangle createRectangle(int length, int breadth) {
+        return new Rectangle(length, breadth);
+    }
+
+    public static Rectangle createSquare(int side) {
+        return new Rectangle(side);
+    }
+
 
     public int area() {
         return length * width;
